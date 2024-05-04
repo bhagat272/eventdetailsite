@@ -1,0 +1,129 @@
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.truncate-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.banner {
+  background: url(/public/media/Banner.svg);
+  background-size: cover;
+  
+  height: 650px;
+}
+
+.recommendations {
+  margin-top: -7rem;
+}
+.recommendations-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 6rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  padding-left: 6rem;
+}
+.recommended-shows-text {
+  font-size: 20px;
+}
+.recommendations-card-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  scrollbar-width: none;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  overflow-y: hidden;
+}
+.recommendations-card {
+  position: relative;
+}
+.recommendations-details-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  padding: 16px;
+}
+ 
+.upcoming-card-container {
+  
+    display: flex;
+    flex-wrap: wrap;
+  position: relative;
+  flex-direction: row; /* Align children vertically */
+   /* Enable vertical scrolling */
+  gap: 1.5rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  height: 100vh; /* Adjust this value as needed */
+  margin-top: 1 rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  width:100rem
+}
+.upcoming-details-container{
+  z-index: 1;
+  bottom:0;
+  padding: 16px;
+
+}
+.upcoming-date{
+ background-color: rgba(0, 0, 0, 0.371); 
+ color: white;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ font-weight: 500;
+ padding: 8px 12px;
+ border-bottom-right-radius: 12px ;
+ border-bottom-left-radius: 12px ;
+ }
+
+
+ @media (max-width: 740px) {
+  .bgg {
+    /* Adjust styles for the nav bar here */
+   background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .upcoming{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+       margin-left: -89px;
+  } 
+  .upcoming-shows-text{
+    width: 570px;
+
+  }
+  .text-all{
+    padding: 0.5rem;
+  }
+   
+  .cate {
+    display: flex !important;
+    overflow-x:auto !important; /* or scroll */
+    flex-wrap: nowrap !important; /* ensures items stay in a single row */
+    gap: 0.2rem!important;
+    flex-direction: row!important;
+    width: 100%!important; 
+    scrollbar-width:none !important;/* or any appropriate width */
+}
+
+  /* Add additional selectors and styles for other elements as needed */
+}
+
+.cate {
+  
+gap: 4rem;
+}
